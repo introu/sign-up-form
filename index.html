@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="image">
+    <div class="logo"><img src="odin-lined.png" class="odinLogo"></img>ODIN</div>
+</div>
+<div class="panel">
+    <div class="top-panel">This is not a real online service! You know you need something <br>like this in your life to
+        help realize your deepest dreams. <br>Sign up <span class="italic">now</span> to get started. <br><br>You <span
+                class="italic">know</span> you want to.
+    </div>
+    <form>
+        <div class="form">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <p>
+                    <label for="user_name">FIRST NAME</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                </p>
+                <p>
+                    <label for="user_surname">LAST NAME</label>
+                    <input type="text" id="user_surname" name="user_surname" required>
+                </p>
+                <p>
+                    <label for="user_email">EMAIL</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </p>
+                <p>
+                    <label for="user_phone">PHONE NUMBER</label>
+                    <input type="text" id="user_phone" name="user_phone" minlength="9" maxlength="9" pattern=".{9,9}"
+                           title="Please input a 9-digit number" required>
+                </p>
+                <p>
+                    <label for="user_password">PASSWORD</label>
+                    <input type="password" id="user_password" name="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                           required>
+                </p>
+                <p>
+                    <label for="user_password_confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="user_password_confirm" name="user_password_confirm"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                           required>
+                </p>
+            </fieldset>
+        </div>
+        <div class="bottom-panel">
+            <button type="submit" id="formSubmit">Create Account</button>
+            <br><span class="loginText">Already have an account? <a href="index.html">Log in</a></span></div>
+    </form>
+</div>
+</body>
+</html>

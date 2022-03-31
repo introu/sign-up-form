@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+:root {
+    font-family: Arial, Georgia, serif;
+}
+
+body, html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url(Norse-Bold.otf);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+body {
+    display: flex;
+}
+
+.image {
+    width: min(40%, 774px);
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-size: auto auto;
+}
+
+.logo {
+    display: flex;
+    font-family: odinFont, Georgia, serif;
+    margin-top: 15vh;
+    font-size: max(10vmin, 60px);
+    color: white;
+    height: max(15vh, 100px);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.odinLogo {
+    height: max(10vmin, 60px);
+}
+.panel {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.top-panel {
+    background: #f6f6f6;
+    font-size: max(3vmin, 20px);
+    width: 100%;
+    padding: max(7vw, 100px) 0 max(5vw, 15px) 3vw;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.form {
+    background: white;
+    box-shadow: 5px 2px 5px 3px #D1D1D1;
+    padding-bottom: 3vw;
+}
+
+fieldset {
+    padding-left: 3vw;
+    display: grid;
+    grid-template-columns: max(15vw, 100px) max(15vw, 100px);
+    grid-template-rows: max(4vw, 40px) max(4vw, 40px) max(4vw, 40px);
+    grid-column-gap: min(7.5vw, 50px);
+    grid-row-gap: 5px;
+}
+
+legend {
+    padding-bottom: max(3vh, 3vw);
+    padding-top: max(3vh, 3vw);
+    font-size: max(3vmin, 20px);
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: max(0.8vw, 10px);
+    margin-bottom: 1px;
+    letter-spacing: 2px;
+}
+
+button {
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+    background: #596D48;
+    border-radius: 5px;
+    border-style: none;
+    width: max(13vw, 75px);
+    height: max(1.5vw, 35px);
+    color: white;
+    font-size: max(1.2vw, 10px);
+}
+button:hover {
+    width: max(13.1vw, 77px);
+}
+
+button:active {
+    background: #428f42;
+}
+
+.loginText {
+    margin-left: 3vw;
+}
+
+a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input {
+    border-style: solid;
+    border-color: #E5E7EB;
+    border-radius: 3px;
+    border-width: 1px;
+    height: clamp(1vmin, 30px, 3vmin);
+    transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #46a0ff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 1px #D1D1D1;
+    transition: border 1s ease-out;
+}
+
+input:-moz-ui-invalid {
+    outline: none;
+    border: 1px solid #ff4646;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 1px #D1D1D1;
+    transition: border 1s ease-out;
+}
